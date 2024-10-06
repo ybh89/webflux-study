@@ -11,6 +11,9 @@ public class MyPublisher<T> implements Publisher<T> {
     private List<T> list;
     private ExecutorService executorService;
 
+    public MyPublisher() {
+    }
+
     public MyPublisher(List<T> list, ExecutorService executorService) {
         this.list = list;
         this.executorService = executorService;
